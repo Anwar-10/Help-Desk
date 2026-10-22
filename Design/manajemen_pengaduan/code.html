@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed": "#0f2000",
+          "on-error": "#ffffff",
+          "surface-container-highest": "#e2e2e2",
+          "on-background": "#1a1c1c",
+          "surface-container-low": "#f3f3f3",
+          "secondary": "#4c662e",
+          "on-primary-fixed": "#082100",
+          "primary-fixed-dim": "#9dd67d",
+          "secondary-fixed-dim": "#b2d08d",
+          "on-primary-fixed-variant": "#215105",
+          "on-secondary-fixed-variant": "#354e19",
+          "tertiary-fixed": "#ffdad8",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#42493c",
+          "primary-container": "#4e8133",
+          "inverse-surface": "#2f3131",
+          "outline": "#72796b",
+          "on-tertiary-fixed": "#410007",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e8e8e8",
+          "error-container": "#ffdad6",
+          "primary-fixed": "#b8f396",
+          "surface-tint": "#386a1e",
+          "on-tertiary-container": "#fffbff",
+          "inverse-primary": "#9dd67d",
+          "on-error-container": "#93000a",
+          "outline-variant": "#c2c9b8",
+          "surface-container": "#eeeeee",
+          "surface-bright": "#f9f9f9",
+          "error": "#ba1a1a",
+          "secondary-fixed": "#ceeda7",
+          "background": "#f9f9f9",
+          "surface-dim": "#dadada",
+          "surface-variant": "#e2e2e2",
+          "primary": "#36671c",
+          "surface": "#f9f9f9",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed-variant": "#81262a",
+          "tertiary": "#9d3b3d",
+          "inverse-on-surface": "#f1f1f1",
+          "secondary-container": "#cbeaa4",
+          "tertiary-fixed-dim": "#ffb3b1",
+          "on-primary-container": "#f8ffed",
+          "on-secondary-container": "#506a32",
+          "on-secondary": "#ffffff",
+          "tertiary-container": "#bd5353"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem",
+          "space-lg": "1.5rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "label-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-lg": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.75rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.6875rem",
+            {
+              "lineHeight": "0.875rem",
+              "letterSpacing": "0.03em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.375rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.5rem",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "2.25rem",
+            {
+              "lineHeight": "2.75rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "1.75rem",
+            {
+              "lineHeight": "2.25rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.25rem",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-5 flex items-center gap-3 bg-surface-container-lowest"><img alt="Logo LAPOR-DAERAH" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VKZ8bDFSqncuDsscOy_g8W4-mf_fPz1cR3osQzKCp4Y3Bv1lFuYf_216OvFdq9SNfXanXQHTWHe64PqBXFLaYo7o6Z_oooLVbxIBJ1OQpyx-J_kJftPNHJdHt9LEgeK_JAzsmzIdCndfxwkML-89X8RWL0hZMyvl-4pwaENQvCc1vYE0CyqF4O_7lPDjdN6WwIwSBBEBR0sRdIq-7uZKRqoSoSMUmgGNXyV69wIf_6g5xsgQ8OKG5r9VI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">LAPOR</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Manajemen Daerah</span></div></div><div class="px-4 py-3"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold px-2">Menu Verifikasi</span></div><nav class="flex flex-col px-3 gap-1" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-metrik" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span>Dashboard Metrik</a><a aria-current="page" class="flex items-center justify-between px-3 py-2 transition-all bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="manajemen-pengaduan" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">inbox</span>Kelola Pengaduan</div><span class="w-2 h-2 rounded-full bg-tertiary"></span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="distribusi-instansi" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span>Distribusi Instansi</a><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="master-kategori" href="#"><span class="material-symbols-outlined text-[20px]">category</span>Master Kategori</a><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="respon-resmi" href="#"><span class="material-symbols-outlined text-[20px]">mark_email_read</span>Respon Resmi</a><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rekapitulasi-laporan" href="#"><span class="material-symbols-outlined text-[20px]">summarize</span>Rekapitulasi Laporan</a></nav></div><div class="p-3 bg-surface-container-lowest/80"><div class="px-2 py-1 mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Konfigurasi</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Pengaturan</a><a class="flex items-center gap-3 px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profil-admin" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>Profil Admin</a></nav><div class="mt-3 pt-3 flex items-center justify-between px-2"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sistem v2.4 Online</span></div><a class="font-label-sm text-label-sm text-primary hover:text-on-surface transition-colors" data-path="beranda" href="#">Ke Portal</a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-4 py-1.5 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Cari nomor tiket, NIK pelapor, instansi..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden md:flex items-center gap-2 px-3 py-1 bg-surface-container-lowest rounded-full"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Server: Optimal (0.12s)</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-tertiary-container ring-2 ring-surface"></span></button><div class="flex items-center gap-3 pl-3"><div class="flex flex-col items-end"><span class="font-label-md text-label-md text-on-surface leading-tight">Bambang Hermanto</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Petugas Verifikator Wilayah</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Content Body Container -->
+<div class="px-8 py-6 space-y-6 max-w-[1600px] mx-auto w-full">
+<!-- 1. Header Sub-bar & Quick Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<nav class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant mb-1">
+<a class="hover:text-primary transition-colors" href="#">Beranda Admin</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Manajemen Pengaduan</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Manajemen Pengaduan Warga</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+            Pusat Verifikasi Aktif
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" onclick="exportDataPrompt()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Ekspor Rekapitulasi (Excel/PDF)
+        </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all" onclick="openCreateModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          + Tambah Pengaduan Manual
+        </button>
+</div>
+</div>
+<!-- 2. Dashboard Summary Cards (KPI Metrics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- Total Pengaduan -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Total Pengaduan</span>
+<span class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">1,428</div>
+<div class="flex items-center gap-1.5 mt-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+12%</span>
+<span class="text-on-surface-variant font-normal">dari bulan lalu</span>
+</div>
+</div>
+</div>
+<!-- Pengaduan Baru -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Perlu Verifikasi</span>
+<span class="p-2 rounded-lg bg-error-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</span>
+</div>
+<div class="mt-4">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-tertiary tracking-tight">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiket baru</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-semibold">Perlu respon segera &lt;2 jam</span>
+</div>
+</div>
+</div>
+<!-- Sedang Diproses -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Sedang Diproses</span>
+<span class="p-2 rounded-lg bg-secondary-container text-secondary">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-xl text-headline-xl text-on-surface tracking-tight">156</div>
+<div class="flex items-center gap-1.5 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="font-semibold">Di 7 Instansi Dinas</span>
+</div>
+</div>
+</div>
+<!-- Selesai Diselesaikan -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Berhasil Selesai</span>
+<span class="p-2 rounded-lg bg-primary-fixed text-primary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</span>
+</div>
+<div class="mt-4">
+<div class="font-headline-xl text-headline-xl text-primary tracking-tight">1,189</div>
+<div class="flex items-center gap-1.5 mt-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-semibold">92.4% SLA</span>
+<span class="text-on-surface-variant font-normal">Tepat waktu</span>
+</div>
+</div>
+</div>
+<!-- Skor Kepuasan -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Kepuasan Warga</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+</div>
+<div class="mt-4">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">4.7</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 5.0</span>
+</div>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>980 ulasan terverifikasi</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Filter Bar & Advanced Data Search -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+<!-- Search Input -->
+<div class="md:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="searchInput" placeholder="Cari nomor tiket, nama warga, kata kunci..." type="text"/>
+</div>
+<!-- Filter: Kategori Layanan -->
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="">Semua Kategori</option>
+<option value="infrastruktur">Infrastruktur Jalan</option>
+<option value="kependudukan">Kependudukan</option>
+<option value="lingkungan">Lingkungan Hidup</option>
+<option value="kesehatan">Kesehatan</option>
+<option value="pendidikan">Pendidikan</option>
+<option value="dishub">Penerangan Jalan</option>
+<option value="satpol">Ketertiban Umum</option>
+</select>
+</div>
+<!-- Filter: Instansi -->
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="">Semua Instansi</option>
+<option value="pupr">Dinas PUPR</option>
+<option value="disdukcapil">Disdukcapil</option>
+<option value="dlh">Dinas Lingkungan Hidup</option>
+<option value="dinkes">Dinas Kesehatan</option>
+<option value="dishub">Dinas Perhubungan</option>
+<option value="satpolpp">Satpol PP</option>
+</select>
+</div>
+<!-- Filter: Status -->
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="">Semua Status</option>
+<option value="baru">Baru</option>
+<option value="diverifikasi">Diverifikasi</option>
+<option value="diproses">Diproses</option>
+<option value="selesai">Selesai</option>
+<option value="ditolak">Ditolak</option>
+</select>
+</div>
+<!-- Rentang Waktu -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full pl-8 pr-3 py-2 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="bulan_ini">Bulan Ini (Nov 2025)</option>
+<option value="hari_ini">Hari Ini</option>
+<option value="7_hari">7 Hari Terakhir</option>
+<option value="kustom">Rentang Kustom...</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant">calendar_today</span>
+</div>
+</div>
+</div>
+<!-- Quick Filter Tags & Bulk Action Trigger -->
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Filter Cepat:</span>
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm" type="button">Semua (1,428)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm hover:bg-error-container transition-colors" type="button">Baru (42)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Perlu Disposisi (18)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Mendekati Batas SLA (5)</button>
+</div>
+<div class="hidden items-center gap-2" id="bulkActions">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold"><span id="selectedCount">0</span> tiket terpilih</span>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" onclick="bulkDisposisi()" type="button">Disposisi Massal</button>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" onclick="bulkExport()" type="button">Cetak Barcode</button>
+</div>
+</div>
+</div>
+<!-- 4 & 5. Tabel Data Utama (6 Baris Riil & Representatif) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="p-3.5 pl-5 w-10">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" id="selectAllCheckbox" onchange="toggleSelectAll(this)" type="checkbox"/>
+</th>
+<th class="py-3.5 px-3">Nomor Tiket</th>
+<th class="py-3.5 px-3">Pelapor</th>
+<th class="py-3.5 px-3">Kategori</th>
+<th class="py-3.5 px-3 max-w-xs">Isi Laporan</th>
+<th class="py-3.5 px-3">Lokasi Kejadian</th>
+<th class="py-3.5 px-3">Instansi Tujuan</th>
+<th class="py-3.5 px-3 text-center">Lampiran</th>
+<th class="py-3.5 px-3">Status</th>
+<th class="py-3.5 px-3">Rating</th>
+<th class="py-3.5 px-4 pr-6 text-right">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Baris 1: TKT-2025-0914 (Baru) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0914</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0914')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Hari ini, 09:12 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-label-md text-label-md font-bold">
+                    BS
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Budi Santoso</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0812-9844-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">road</span>
+                  Infrastruktur Jalan
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  Ambles dan lubang sedalam 30cm di depan Pasar Sukamaju membahayakan pengendara roda dua.
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0914')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Jl. Raden Intan No. 45</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kel. Sukamaju</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Dinas PUPR
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="2 Berkas Foto">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">photo_library</span>
+<span class="font-label-sm text-label-sm font-semibold">2 JPG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+                  Baru
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-outline">-</span>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openDispatchModal('TKT-2025-0914', 'Dinas PUPR')" title="Disposisi Dinas" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0914', 'Budi Santoso')" title="Beri Tanggapan Resmi" type="button">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 2: TKT-2025-0902 (Diverifikasi) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0902</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0902')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kemarin, 14:40 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md font-bold">
+                    SR
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Siti Rahmawati</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0877-2231-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">badge</span>
+                  Pelayanan Kependudukan
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  Antrean cetak KTP elektronik dihentikan sepihak sebelum jam layanan usai di loket umum.
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0902')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Kantor Camat Melati</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Loket 2 Layanan</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Disdukcapil
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="1 Berkas Foto Karcis">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">image</span>
+<span class="font-label-sm text-label-sm font-semibold">1 PNG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Diverifikasi
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-outline">-</span>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openDispatchModal('TKT-2025-0902', 'Disdukcapil')" title="Disposisi Dinas" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0902', 'Siti Rahmawati')" title="Beri Tanggapan Resmi" type="button">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 3: TKT-2025-0887 (Diproses) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0887</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0887')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">12 Nov, 11:20 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-label-md text-label-md font-bold">
+                    HG
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Hendra Gunawan</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0813-8871-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">delete_sweep</span>
+                  Kebersihan &amp; Lingkungan
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  Tumpukan sampah liar di pinggir sungai belum diangkut selama 5 hari, menimbulkan bau menyengat.
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0887')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Bantaran Kali Cisadane</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">RT 04 / RW 02</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Dinas Lingkungan Hidup
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="Foto Sampah Liar">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">image</span>
+<span class="font-label-sm text-label-sm font-semibold">1 JPG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Diproses
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-outline">-</span>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openDispatchModal('TKT-2025-0887', 'Dinas Lingkungan Hidup')" title="Disposisi Dinas" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0887', 'Hendra Gunawan')" title="Beri Tanggapan Resmi" type="button">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 4: TKT-2025-0854 (Diproses) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0854</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0854')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">10 Nov, 08:35 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-label-md text-label-md font-bold">
+                    RD
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Ratna Dewi</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0852-1900-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">local_hospital</span>
+                  Fasilitas Kesehatan
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  Antrean poli lansia tanpa kursi memadai dan obat resep kronis kosong di Puskesmas Pembantu.
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0854')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Jl. Kenanga No. 12</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kel. Mawar Indah</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Dinas Kesehatan
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="Dokumen Resep">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+<span class="font-label-sm text-label-sm font-semibold">1 PDF</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Diproses
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-outline">-</span>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openDispatchModal('TKT-2025-0854', 'Dinas Kesehatan')" title="Disposisi Dinas" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0854', 'Ratna Dewi')" title="Beri Tanggapan Resmi" type="button">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 5: TKT-2025-0810 (Selesai) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0810</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0810')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">08 Nov, 20:15 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                    AF
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Ahmad Fauzi</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0819-3312-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">wb_incandescent</span>
+                  Penerangan Jalan (Dishub)
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  4 titik lampu penerangan jalan padam total saat hujan lebat mengakibatkan rawan kecelakaan.
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0810')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Flyover Beringin Jaya</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Jalur Barat</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Dinas Perhubungan
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="Foto Kondisi Malam">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">image</span>
+<span class="font-label-sm text-label-sm font-semibold">2 JPG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Selesai
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+</div>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0810', 'Ahmad Fauzi')" title="Lihat Tanggapan Terkirim" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 6: TKT-2025-0795 (Ditolak) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="p-3.5 pl-5">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary/30 accent-[#36671c] cursor-pointer" onchange="handleRowSelect()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span>TKT-2025-0795</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" onclick="navigator.clipboard.writeText('TKT-2025-0795')" title="Salin Nomor Tiket" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">05 Nov, 16:05 WIB</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-bold">
+                    JP
+                  </div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface leading-snug">Joko Prabowo</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">0821-4409-xxxx</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">shield</span>
+                  Ketertiban Umum
+                </span>
+</td>
+<td class="py-3.5 px-3 min-w-[240px] max-w-xs">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+                  Laporan sengketa batas tanah pribadi tanpa ada pelanggaran fasilitas umum (non-kewenangan publik).
+                </p>
+<button class="font-label-sm text-label-sm text-primary hover:underline mt-0.5 inline-block" onclick="openDetailDrawer('TKT-2025-0795')" type="button">
+                  Lihat Selengkapnya
+                </button>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-start gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0 mt-0.5">location_on</span>
+<div>
+<div>Komp. Perumahan Indah</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Blok D No. 8</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Satpol PP
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<div class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors" title="Dokumen Sertifikat">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+<span class="font-label-sm text-label-sm font-semibold">1 PDF</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Ditolak
+                </span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1">
+<div class="flex text-outline">
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[15px] text-outline-variant">star</span>
+<span class="material-symbols-outlined text-[15px] text-outline-variant">star</span>
+<span class="material-symbols-outlined text-[15px] text-outline-variant">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">2.0</span>
+</div>
+</td>
+<td class="py-3.5 px-4 pr-6 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" onclick="openResponseModal('TKT-2025-0795', 'Joko Prabowo')" title="Lihat Alasan Penolakan" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="openStatusDropdown(this)" title="Aksi Lainnya" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="p-4 bg-surface-container-low/70 flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Menampilkan <span class="font-semibold text-on-surface">1 - 6</span> dari <span class="font-semibold text-on-surface">1,428</span> pengaduan terdaftar
+        </div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container text-outline cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center" type="button">1</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">3</button>
+<span class="text-on-surface-variant px-1 font-body-sm">...</span>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">238</button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. MODAL & DRAWER INTERAKTIF (Tindak Lanjut & Disposisi) -->
+<!-- Modal: Disposisi Instansi -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm" id="dispatchModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-6 shadow-xl space-y-4">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2.5">
+<span class="p-2 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">forward_to_inbox</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Disposisi Penanganan Tiket</h3>
+<p class="font-label-sm text-label-sm text-primary font-semibold" id="dispatchTicketId">TKT-2025-xxxx</p>
+</div>
+</div>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeDispatchModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-4 py-2">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Pilih Dinas Tujuan</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" id="modalDinasSelect">
+<option value="Dinas PUPR">Dinas Pekerjaan Umum &amp; Penataan Ruang (PUPR)</option>
+<option value="Disdukcapil">Dinas Kependudukan &amp; Pencatatan Sipil</option>
+<option value="Dinas Lingkungan Hidup">Dinas Lingkungan Hidup (DLH)</option>
+<option value="Dinas Kesehatan">Dinas Kesehatan (Dinkes)</option>
+<option value="Dinas Perhubungan">Dinas Perhubungan (Dishub)</option>
+<option value="Satpol PP">Satuan Polisi Pamong Praja (Satpol PP)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Kepala Bidang / Tim Teknis Pelaksana</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option value="kabid1">Kabid Bina Marga &amp; Pemeliharaan Rutin</option>
+<option value="kabid2">Tim Reaksi Cepat Darurat (TRC)</option>
+<option value="kabid3">Pengawas Wilayah Sub-Sektor 3</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Batas Target Waktu (SLA)</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option value="24">Maks. 24 Jam (Darurat)</option>
+<option selected="" value="48">Maks. 2x24 Jam (Standar)</option>
+<option value="72">Maks. 3x24 Jam</option>
+<option value="168">7 Hari Kerja</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Prioritas Tindakan</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option class="text-tertiary" value="tinggi">Tinggi (Merah)</option>
+<option selected="" value="sedang">Sedang (Kuning)</option>
+<option value="rendah">Normal / Berkala</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Instruksi Disposisi dari Verifikator</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Contoh: Segera kirim regu pemelihara untuk cek lokasi lubang ambles, pastikan rambu pengaman terpasang..." rows="3"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeDispatchModal()" type="button">
+          Batal
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" onclick="confirmDispatch()" type="button">
+          Terbitkan Disposisi Resmi
+        </button>
+</div>
+</div>
+</div>
+<!-- Modal: Beri Tanggapan Resmi ke Warga -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm" id="responseModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-6 shadow-xl space-y-4">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2.5">
+<span class="p-2 rounded-lg bg-primary-fixed text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Respon Resmi Pelapor</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium" id="responseTicketMeta">Kepada: Budi Santoso (TKT-2025-xxxx)</p>
+</div>
+</div>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeResponseModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-4 py-2">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Gunakan Template Balasan Cepat</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" onchange="applyResponseTemplate(this.value)">
+<option value="">-- Pilih Format Template Resmi --</option>
+<option value="t1">Verifikasi Diterima &amp; Diteruskan ke Instansi</option>
+<option value="t2">Permintaan Bukti / Klarifikasi Tambahan</option>
+<option value="t3">Pekerjaan Selesai Ditangani Lapangan</option>
+<option value="t4">Penolakan Laporan (Non-Kewenangan Pemda)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Saluran Notifikasi Warga</label>
+<div class="flex gap-4">
+<label class="flex items-center gap-2 font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="rounded text-primary accent-[#36671c]" type="checkbox"/>
+<span>WhatsApp Gateway</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="rounded text-primary accent-[#36671c]" type="checkbox"/>
+<span>Email Resmi</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm cursor-pointer">
+<input class="rounded text-primary accent-[#36671c]" type="checkbox"/>
+<span>SMS Broadcast</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Teks Tanggapan Resmi</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 leading-relaxed" id="responseTextarea" placeholder="Tuliskan tanggapan terverifikasi yang akan langsung diterima oleh pelapor..." rows="4"></textarea>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Lampirkan Bukti Penanganan / Dokumen Berita Acara</label>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-3 text-center bg-surface-container-low/50 hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">upload_file</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Klik atau seret foto perbaikan (JPG/PNG/PDF max 5MB)</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeResponseModal()" type="button">
+          Batal
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2" onclick="sendResponseNotification()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+          Kirim Tanggapan ke Warga
+        </button>
+</div>
+</div>
+</div>
+<!-- Detail Drawer Slide-in -->
+<div class="fixed inset-0 z-50 hidden" id="detailDrawer">
+<div class="absolute inset-0 bg-black/30 backdrop-blur-xs" onclick="closeDetailDrawer()"></div>
+<div class="absolute right-0 top-0 bottom-0 w-full max-w-xl bg-surface-container-lowest shadow-2xl p-6 overflow-y-auto space-y-6">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-tertiary font-label-sm text-label-sm font-semibold">Status: Menunggu Disposisi</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1" id="drawerTicketId">TKT-2025-0914</h2>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeDetailDrawer()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Detail Pelapor Info -->
+<div class="bg-surface-container-low p-4 rounded-xl space-y-3">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Identitas Pelapor (Terverifikasi Dukcapil)</div>
+<div class="grid grid-cols-2 gap-3 text-body-sm">
+<div>
+<span class="text-on-surface-variant block font-label-sm text-label-sm">Nama Lengkap</span>
+<span class="font-semibold text-on-surface">Budi Santoso</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-label-sm">NIK Terdaftar</span>
+<span class="font-semibold text-on-surface">327508190589xxxx</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-label-sm">Kontak Pelapor</span>
+<span class="font-semibold text-on-surface">0812-9844-3310 (WA Aktif)</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-label-sm">Kanal Masuk</span>
+<span class="font-semibold text-on-surface">Aplikasi LAPOR-DAERAH Mobile</span>
+</div>
+</div>
+</div>
+<!-- Deskripsi Lengkap Aduan -->
+<div class="space-y-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Narasi Lengkap Pengaduan Warga</h4>
+<p class="font-body-md text-body-md text-on-surface bg-surface-container-lowest p-4 rounded-xl shadow-sm leading-relaxed">
+          "Mohon perhatian kepada dinas terkait, jalan ambles sedalam kira-kira 30 sentimeter tepat di depan pintu keluar Pasar Sukamaju sudah berlangsung sejak 3 hari lalu. Kondisi ini sangat membahayakan terutama di malam hari karena minim lampu jalan. Kemarin sore sudah ada ibu-ibu terjatuh dari sepeda motor saat menghindari lubang. Mohon segera ditambal darurat dan diaspal kembali."
+        </p>
+</div>
+<!-- Lampiran Berkas Media -->
+<div class="space-y-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Lampiran Bukti Lapangan</h4>
+<div class="grid grid-cols-2 gap-3">
+<div class="relative rounded-lg overflow-hidden group shadow-sm">
+<img class="w-full h-36 object-cover group-hover:scale-105 transition-transform" data-alt="Close up photograph showing asphalt road damaged with deep hole and puddle at night urban street Indonesia with hazard cone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByrBNdZYTU-r3YarTYvDvzMbHtk-I8EbxnhsVlSYC960BLx9TIuNNSol_G57KCgej9nSW6HyneBWEfC4_BgtFK-R7XzfiNa4-NBF0N20AMu7Y2dvPyPb0R8JEAd4Eow048L9O4Wew9IvYEdDlOoNWDBGdX9YfSi083sLiPxNXE9V44TO-9W8we3PDcxlTNYx6PKq_gQy7szpjLYTjX34nEhDQ9IY_WYTjPDxY7qBHb79F6-_8OPwbd"/>
+<span class="absolute bottom-2 left-2 bg-black/60 text-white font-label-sm text-label-sm px-2 py-0.5 rounded backdrop-blur-xs">Foto_1_Lubang.jpg</span>
+</div>
+<div class="relative rounded-lg overflow-hidden group shadow-sm">
+<img class="w-full h-36 object-cover group-hover:scale-105 transition-transform" data-alt="Wide angle shot of crowded Sukamaju street market with congested motorbike traffic avoiding damaged road section in daytime Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZvmOi1tS5p1aC8pRB3QRYmGp9p5h-pTFVr3oL5W9-GV4uMu5Cj1jrn_UkjXJTh9FJ8wmoNKBVy4GVxVEZ7UituuD8sM29OB7L84WKvs-nOVffIVXhMrWPBmCNMdGk9VmQGgLXdl50t9bxnvqj3zGnJdif94n6sQ-knl6H5fS01T1UmDTIeHOsGWncUvZEzGWt6QqUUKeGLu5-JJxP1AEIEBp74OWOaRjs1VMcaLP0pxNT_cB1O89W"/>
+<span class="absolute bottom-2 left-2 bg-black/60 text-white font-label-sm text-label-sm px-2 py-0.5 rounded backdrop-blur-xs">Foto_2_KonteksPasar.jpg</span>
+</div>
+</div>
+</div>
+<!-- Peta Titik Lokasi GPS -->
+<div class="space-y-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Titik Koordinat Lokasi Kejadian</h4>
+<div class="w-full h-44 bg-cover bg-center rounded-xl relative shadow-sm" data-location="Pasar Sukamaju, Jl. Raden Intan No. 45" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWu0_C2SMr399DXKqZ6u_udDTIN_taEpG3fZm_a8kxwN35eHuQfzsgHFrDYs8TUUtshIq16vU4efECMs_hv2FozHVvYxR2CAYLk1-7VHhJ_vAjo6-48_mzWsQtTn37HTFPYDA30H72X5x96j6HxBy7SuJdZ6fIlwc-zG-_tPirdW4MiI4GQBG3axJM5kmKFIAm6Q5xrmDCaSJNC0NkCiCV2rnOs_oevTjP4nKA7OuO9M7ENjMTB4wW')">
+<div class="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
+<div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">pin_drop</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Lat: -6.2291, Long: 106.8271</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Riwayat Timeline Progres -->
+<div class="space-y-3 pt-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Histori Tindak Lanjut</h4>
+<div class="border-l-2 border-surface-container pl-4 space-y-4 font-body-sm">
+<div class="relative">
+<span class="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Hari Ini, 09:12 WIB</div>
+<div class="font-semibold text-on-surface">Laporan Diterima Sistem</div>
+<div class="text-on-surface-variant font-label-sm">Masuk via formulir mobile masyarakat</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[21px] top-1 w-3 h-3 rounded-full bg-tertiary ring-4 ring-surface-container-lowest"></span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Hari Ini, 09:30 WIB</div>
+<div class="font-semibold text-on-surface">Tinjauan Tim Verifikator</div>
+<div class="text-on-surface-variant font-label-sm">Sedang ditelaah oleh Bambang Hermanto</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center gap-3">
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-all" onclick="closeDetailDrawer(); openDispatchModal('TKT-2025-0914', 'Dinas PUPR')" type="button">
+          Disposisi ke Bidang Terkait
+        </button>
+<button class="px-4 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all" onclick="closeDetailDrawer(); openResponseModal('TKT-2025-0914', 'Budi Santoso')" type="button">
+          Kirim Tanggapan
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notifikasi Ringan -->
+<div class="fixed bottom-6 right-6 z-50 hidden px-4 py-3 rounded-lg bg-on-background text-surface shadow-xl flex items-center gap-3 transition-all transform translate-y-2" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-primary" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Tindakan berhasil diproses!</span>
+</div>
+<!-- Script Micro-Interactions -->
+<script>
+    function toggleSelectAll(masterCheckbox) {
+      const checkboxes = document.querySelectorAll('.row-checkbox');
+      checkboxes.forEach(cb => cb.checked = masterCheckbox.checked);
+      handleRowSelect();
+    }
+
+    function handleRowSelect() {
+      const checkboxes = document.querySelectorAll('.row-checkbox:checked');
+      const bulkActions = document.getElementById('bulkActions');
+      const selectedCount = document.getElementById('selectedCount');
+      if (checkboxes.length > 0) {
+        bulkActions.classList.remove('hidden');
+        bulkActions.classList.add('flex');
+        selectedCount.textContent = checkboxes.length;
+      } else {
+        bulkActions.classList.add('hidden');
+        bulkActions.classList.remove('flex');
+      }
+    }
+
+    function openDispatchModal(ticketId, defaultDinas) {
+      document.getElementById('dispatchTicketId').textContent = ticketId;
+      if (defaultDinas) {
+        const select = document.getElementById('modalDinasSelect');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(defaultDinas) || select.options[i].value === defaultDinas) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      document.getElementById('dispatchModal').classList.remove('hidden');
+    }
+
+    function closeDispatchModal() {
+      document.getElementById('dispatchModal').classList.add('hidden');
+    }
+
+    function confirmDispatch() {
+      closeDispatchModal();
+      showToast('Disposisi penugasan teknis dinas berhasil dikirimkan!');
+    }
+
+    function openResponseModal(ticketId, citizenName) {
+      document.getElementById('responseTicketMeta').textContent = `Kepada: ${citizenName} (${ticketId})`;
+      document.getElementById('responseModal').classList.remove('hidden');
+    }
+
+    function closeResponseModal() {
+      document.getElementById('responseModal').classList.add('hidden');
+    }
+
+    function applyResponseTemplate(type) {
+      const textarea = document.getElementById('responseTextarea');
+      if (type === 't1') {
+        textarea.value = "Halo Bpk/Ibu, laporan Anda telah kami verifikasi dan saat ini sudah diteruskan ke tim teknis dinas penanggung jawab. Tim kami sedang menjadwalkan pengecekan lapangan.";
+      } else if (type === 't2') {
+        textarea.value = "Halo Bpk/Ibu, untuk mempercepat proses tindak lanjut, mohon melampirkan informasi patokan lokasi yang lebih spesifik atau foto kondisi saat ini.";
+      } else if (type === 't3') {
+        textarea.value = "Terima kasih atas laporan Anda. Tim teknis telah menyelesaikan penanganan masalah di lapangan sesuai koordinat yang diberikan. Silakan memberikan penilaian kepuasan layanan.";
+      } else if (type === 't4') {
+        textarea.value = "Laporan Anda telah ditelaah. Namun perkara ini termasuk ranah privat/non-kewenangan pemerintah daerah. Disarankan untuk berkoordinasi melalui mediasi kelurahan setempat.";
+      }
+    }
+
+    function sendResponseNotification() {
+      closeResponseModal();
+      showToast('Tanggapan resmi berhasil dikirim melalui WhatsApp & Email!');
+    }
+
+    function openDetailDrawer(ticketId) {
+      document.getElementById('drawerTicketId').textContent = ticketId;
+      document.getElementById('detailDrawer').classList.remove('hidden');
+    }
+
+    function closeDetailDrawer() {
+      document.getElementById('detailDrawer').classList.add('hidden');
+    }
+
+    function openCreateModal() {
+      showToast('Membuka formulir pendaftaran manual pengaduan...');
+    }
+
+    function exportDataPrompt() {
+      showToast('Menyiapkan file ekspor rekapitulasi data (Excel .xlsx & PDF)...');
+    }
+
+    function bulkDisposisi() {
+      const count = document.querySelectorAll('.row-checkbox:checked').length;
+      showToast(`Menyiapkan disposisi kolektif untuk ${count} tiket terpilih...`);
+    }
+
+    function bulkExport() {
+      showToast('Mencetak lembar kendali barcode untuk tiket terpilih...');
+    }
+
+    function openStatusDropdown(btn) {
+      showToast('Opsi aksi cepat tiket...');
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.remove('translate-y-2');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.add('translate-y-2');
+      }, 3500);
+    }
+  </script>
+</div></main></div></body></html>
